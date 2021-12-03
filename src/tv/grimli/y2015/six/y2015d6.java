@@ -37,16 +37,17 @@ public class y2015d6 {
     for (int x = from[0]; x <= to[0]; x++) {
       for (int y = from[1]; y <= to[1]; y++) {
         // toggle the map at this point
-        lightMap.get(x).set(y, 1-lightMap.get(x).get(y));
+        lightMap.get(x).set(y, lightMap.get(x).get(y) + 2);
       }
     }
     return lightMap;
   }
+
   public static List<List<Integer>> on(int[] from, int[] to, List<List<Integer>> lightMap) {
     for (int x = from[0]; x <= to[0]; x++) {
       for (int y = from[1]; y <= to[1]; y++) {
         // toggle the map at this point
-        lightMap.get(x).set(y, 1);
+        lightMap.get(x).set(y, lightMap.get(x).get(y) + 1);
       }
     }
     return lightMap;
@@ -56,7 +57,10 @@ public class y2015d6 {
     for (int x = from[0]; x <= to[0]; x++) {
       for (int y = from[1]; y <= to[1]; y++) {
         // toggle the map at this point
-        lightMap.get(x).set(y, 0);
+        int curBright = lightMap.get(x).get(y);
+        if (curBright >= 1) {
+          lightMap.get(x).set(y, curBright - 1);
+        }
       }
     }
     return lightMap;
@@ -67,9 +71,7 @@ public class y2015d6 {
     for (int x = 0; x <= 999; x++) {
       for (int y = 0; y <= 999; y++) {
         // toggle the map at this point
-        if (lightMap.get(x).get(y) == 1) {
-          output++;
-        }
+        output += lightMap.get(x).get(y);
       }
     }
     return output;
@@ -86,5 +88,4 @@ public class y2015d6 {
     }
     return lightMap;
   }
-
 }
