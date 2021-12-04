@@ -1,6 +1,7 @@
 package tv.grimli;
 
-import tv.grimli.y2015.seven.y2015d7;
+import tv.grimli.y2015.d04.y2015d4;
+import tv.grimli.y2015.d07.y2015d7;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
