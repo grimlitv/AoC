@@ -13,7 +13,8 @@ import java.util.List;
 public class y2015d6 {
 
   public static int run() throws IOException {
-    var userInterface = UserInterface.generateUi();
+    var useUi = false;
+    var userInterface = useUi ? UserInterface.generateUi() : null;
     
     // read from the text file
     List<String> input = ReadFromFile.stringStreams("src/tv/grimli/y2015/d06/input.txt");
@@ -33,7 +34,8 @@ public class y2015d6 {
           on(from, to, lightMap);
         }
       }
-      userInterface.update(lightMap);
+      if (userInterface != null)
+        userInterface.update(lightMap);
     }
 
     return countLights(lightMap);
