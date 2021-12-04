@@ -11,7 +11,7 @@ public class y2015d6 {
 
   public static int run() throws IOException {
     // read from the text file
-    List<String> input = ReadFromFile.stringStreams("src/tv/grimli/y2015/six/input.txt");
+    List<String> input = ReadFromFile.stringStreams("src/tv/grimli/y2015/d06/input.txt");
     List<List<Integer>> lightMap = buildLightMap();
     for (String instruction : input) {
       String[] insSet = instruction.split(" ");
