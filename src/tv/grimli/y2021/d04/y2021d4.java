@@ -53,7 +53,7 @@ public class y2021d4 {
       //need this to multiply if bingo
       currentCall = call;
 
-      for (int board = 0; board < bingoBoards.size() -1; board++) {
+      for (int board = 0; board < bingoBoards.size(); board++) {
         for (int column = 0; column < 5; column++) {
           for (int row = 0; row < 5; row++) {
             if (bingoBoards.get(board)[column][row] == call) {
@@ -69,7 +69,7 @@ public class y2021d4 {
                 }
                 totalBoards--;
               }
-              if (totalBoards == 1) {
+              if (totalBoards == 0) {
                 return bingo(currentCall, bingoBoards.get(board), bingoBoards);
               }
             }
