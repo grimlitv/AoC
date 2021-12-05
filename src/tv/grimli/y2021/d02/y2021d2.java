@@ -1,4 +1,4 @@
-package tv.grimli.y2021.two;
+package tv.grimli.y2021.d02;
 
 import tv.grimli.ReadFromFile;
 
