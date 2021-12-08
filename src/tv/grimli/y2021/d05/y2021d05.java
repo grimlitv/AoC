@@ -50,16 +50,7 @@ public class y2021d05 {
         lineMap.get(x).set(y, lineMap.get(x).get(y) + 1);
         y--;
       }
-
     }
-
-
-
-
-
-
-
-
     return lineMap;
   }
 
@@ -100,7 +91,7 @@ public class y2021d05 {
   }
 
   public static List<List<Integer>> buildLightMap() {
-    List<List<Integer>> lightMap = new ArrayList<>();;
+    List<List<Integer>> lightMap = new ArrayList<>();
     for (int x = 0; x < gridSize; x++) {
       List<Integer> insert = new ArrayList<>();
       for (int y = 0; y < gridSize; y++) {
