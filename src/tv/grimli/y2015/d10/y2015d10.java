@@ -2,14 +2,13 @@ package tv.grimli.y2015.d10;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class y2015d10 {
   public static int run() throws IOException {
     //char[] input = "1".toCharArray();
     char[] input = "3113322113".toCharArray();
-    int howManyTimes = 50;
+    int howManyTimes = 50; // 5 for sample, 40 for part one
 
     List<Character> output = new ArrayList<>();
     for(char put : input) {

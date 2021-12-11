@@ -2,6 +2,7 @@ package tv.grimli;
 
 import tv.grimli.y2015.d09.y2015d09;
 import tv.grimli.y2015.d10.y2015d10;
+import tv.grimli.y2015.d11.y2015d11;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
@@ -27,8 +28,9 @@ public class Main {
         //System.out.println("2015 Day eight (part one) answer: " + y2015d8.run());
         //System.out.println("2015 Day eight (part two) answer: " + y2015d8.runPartTwo());
         //System.out.println("2015 Day nine (part one/two) answer: " + y2015d09.run());
-        System.out.println("2015 Day ten (part one) answer: " + y2015d10.run());
-        //System.out.println("2015 Day ten (part two) answer: " + y2015d10.runPartTwo());
+        //System.out.println("2015 Day ten (part one/two) answer: " + y2015d10.run());
+        System.out.println("2015 Day eleven (part one) answer: " + y2015d11.run());
+        //System.out.println("2015 Day eleven (part two) answer: " + y2015d11.runPartTwo());
 
         // *** 2021 ***
         //System.out.println("2021 Day one (part one) answer: " + y2015d1.run());
