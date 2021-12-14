@@ -1,6 +1,9 @@
 package tv.grimli;
 
+import tv.grimli.y2015.d11.y2015d11;
+import tv.grimli.y2015.d12.y2015d12;
 import tv.grimli.y2021.d11.y2021d11;
+import tv.grimli.y2021.d12.y2021d12;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
@@ -27,8 +30,10 @@ public class Main {
         //System.out.println("2015 Day eight (part two) answer: " + y2015d8.runPartTwo());
         //System.out.println("2015 Day nine (part one/two) answer: " + y2015d09.run());
         //System.out.println("2015 Day ten (part one/two) answer: " + y2015d10.run());
-//        System.out.println("2015 Day eleven (part one) answer: " + y2015d11.run());
+        //System.out.println("2015 Day eleven (part one) answer: " + y2015d11.run());
         //System.out.println("2015 Day eleven (part two) answer: " + y2015d11.runPartTwo());
+        //System.out.println("2015 Day twelve (part one) answer: " + y2015d12.run());
+//        System.out.println("2015 Day twelve (part two) answer: " + y2015d12.runPartTwo());
 
         // *** 2021 ***
         //System.out.println("2021 Day one (part one) answer: " + y2015d1.run());
@@ -50,6 +55,9 @@ public class Main {
         //System.out.println("2021 Day ten (part one) answer: " + y2021d10.run());
         //System.out.println("2021 Day ten (part two) answer: " + y2021d10.runPartTwoAsJavaStack());
         //System.out.println("2021 Day eleven (part one) answer: " + y2021d11.run());
-        System.out.println("2021 Day eleven (part two) answer: " + y2021d11.runPartTwo());
+        //System.out.println("2021 Day eleven (part two) answer: " + y2021d11.runPartTwo());
+        //System.out.println("2021 Day twelve (part one/two) answer: " + y2021d12.run());
+        System.out.println("2021 Day thirteen (part one/two) answer: " + y2021d13.run());
+        //System.out.println("2021 Day thirteen (part two) answer: " + y2021d13.runPartTwo());
     }
 }
