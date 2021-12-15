@@ -4,6 +4,8 @@ import tv.grimli.y2015.d11.y2015d11;
 import tv.grimli.y2015.d12.y2015d12;
 import tv.grimli.y2021.d11.y2021d11;
 import tv.grimli.y2021.d12.y2021d12;
+import tv.grimli.y2021.d13.y2021d13;
+import tv.grimli.y2021.d14.y2021d14;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
@@ -57,7 +59,7 @@ public class Main {
         //System.out.println("2021 Day eleven (part one) answer: " + y2021d11.run());
         //System.out.println("2021 Day eleven (part two) answer: " + y2021d11.runPartTwo());
         //System.out.println("2021 Day twelve (part one/two) answer: " + y2021d12.run());
-        System.out.println("2021 Day thirteen (part one/two) answer: " + y2021d13.run());
-        //System.out.println("2021 Day thirteen (part two) answer: " + y2021d13.runPartTwo());
+        //System.out.println("2021 Day thirteen (part one/two) answer: " + y2021d13.run());
+        System.out.println("2021 Day fourteen (part one/two) answer: " + y2021d14.run());
     }
 }
