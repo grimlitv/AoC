@@ -28,7 +28,7 @@ public class y2021d14 {
     return countElements(state);
   }
 
-  public static int runPartTwo() throws IOException {
+  public static long runPartTwo() throws IOException {
     // read from the text file
     List<String> dotInput = ReadFromFile.stringStreams("src/tv/grimli/y2021/d14/input.txt");
 
@@ -39,13 +39,16 @@ public class y2021d14 {
       elementSet.add(element);
     }
     HashMap<String, String> rules = new HashMap<>();
-    HashMap<String, Integer> state = new HashMap<>();
+    HashMap<String, Long> state = new HashMap<>();
     for(int i = 2; i < dotInput.size(); i++) {
       String[] splitMe = dotInput.get(i).split(" -> ");
       rules.put(splitMe[0], splitMe[1]);
-      state.put(splitMe[0], 0);
+      state.put(splitMe[0], (long)0);
       elementSet.add(splitMe[1]);
     }
+    System.out.println("Element Set:");
+    System.out.println(elementSet);
+    System.out.println("Start Value:");
     System.out.println(startVal);
 
     List<String> insSet = new ArrayList<>();
@@ -55,14 +58,14 @@ public class y2021d14 {
     for (String instruction : insSet) {
       state.put(instruction, state.get(instruction) + 1);
     }
-    for (int i = 0; i < steps; i++) {
+    for (int i = 0; i < steps - 1; i++) {
       state = applyRulesPartTwo(state, startVal, rules);
     }
     return countElementsPartTwo(state, startVal, elementSet, rules);
   }
 
   private static int countElements(String state) {
-    List<Integer> outputCounts = new ArrayList<>();
+    List<Long> outputCounts = new ArrayList<>();
     String[] elementList = state.split("(?!^)");
     Set<String> elementSet = new HashSet<>();
     for (String element : elementList) {
@@ -76,11 +79,11 @@ public class y2021d14 {
           count++;
         }
       }
-      outputCounts.add(count);
+      outputCounts.add((long)count);
     }
     Collections.sort(outputCounts);
     System.out.println(outputCounts);
-    return outputCounts.get(outputCounts.size() - 1) - outputCounts.get(0);
+    return (int) (outputCounts.get(outputCounts.size() - 1) - outputCounts.get(0));
   }
 
   private static String applyRules(String inputState, HashMap<String, String> rules) {
@@ -99,34 +102,41 @@ public class y2021d14 {
     return newState.toString();
   }
 
-  private static HashMap<String, Integer> applyRulesPartTwo(HashMap<String, Integer> state, String startVal, HashMap<String, String> rules) {
-    HashMap<String, Integer> outputState = new HashMap<>(state);
-    for (Map.Entry<String, Integer> ins : state.entrySet()) {
+  private static HashMap<String, Long> applyRulesPartTwo(HashMap<String, Long> state, String startVal, HashMap<String, String> rules) {
+    HashMap<String, Long> outputState = new HashMap<>();
+    for (Map.Entry<String, Long> ins : state.entrySet()) {
       String rule = ins.getKey();
-      int result = ins.getValue();
+      long result = ins.getValue();
       if (result > 0) {
         String middleChar = rules.get(rule);
         String firstCall = rule.charAt(0) + middleChar;
         String secondCall = middleChar + rule.charAt(1);
-        outputState.put(firstCall, outputState.get(firstCall) + 1);
-        outputState.put(secondCall, outputState.get(secondCall) + 1);
+        outputState.put(firstCall, outputState.getOrDefault(firstCall, 0L) + result);
+        outputState.put(secondCall, outputState.getOrDefault(secondCall, 0L) + result);
       }
     }
     return outputState;
   }
 
-  private static int countElementsPartTwo(HashMap<String, Integer> state, String startVal, Set<String> elementSet, HashMap<String, String> rules) {
-    HashMap<String, Integer> outputCounts = new HashMap<>();
-    for (Map.Entry<String, Integer> ins : state.entrySet()) {
+  private static long countElementsPartTwo(HashMap<String, Long> state, String startVal, Set<String> elementSet, HashMap<String, String> rules) {
+    printState(state, rules);
+    HashMap<String, Long> outputCounts = new HashMap<>();
+    for (Map.Entry<String, Long> ins : state.entrySet()) {
       String rule = ins.getKey();
-      int result = ins.getValue();
+      long result = ins.getValue();
       String element = rules.get(rule);
-      outputCounts.put(element, outputCounts.getOrDefault(element, 0) + result);
+      if (result > 0) {
+        outputCounts.put(rule.substring(0,1), outputCounts.getOrDefault(rule.substring(0,1), (long)0) + result);
+        System.out.println(rule.substring(0,1) + " + " + result + " (first part of rule)");
+        outputCounts.put(element, outputCounts.getOrDefault(element, (long)0) + result);
+        System.out.println(element + " + " + result);
+      }
     }
     String lastChar = startVal.substring(startVal.length() - 1);
-    outputCounts.put(lastChar, outputCounts.getOrDefault(lastChar, 0) + 1);
-    List<Integer> outputNumbers = new ArrayList<>();
-    for (Map.Entry<String, Integer> ins : outputCounts.entrySet()) {
+    outputCounts.put(lastChar, outputCounts.getOrDefault(lastChar, (long)0) + 1);
+    System.out.println(lastChar + " + " + 1 + " (last char)");
+    List<Long> outputNumbers = new ArrayList<>();
+    for (Map.Entry<String, Long> ins : outputCounts.entrySet()) {
       outputNumbers.add(ins.getValue());
     }
     Collections.sort(outputNumbers);
@@ -134,4 +144,13 @@ public class y2021d14 {
     return outputNumbers.get(outputNumbers.size() - 1) - outputNumbers.get(0);
 
   }
+
+  private static void printState(HashMap<String, Long> state, HashMap<String, String> rules) {
+    for (Map.Entry<String, Long> ins : state.entrySet()) {
+      System.out.print("Key : " + ins.getKey() + " Value: " + ins.getValue());
+      System.out.println(" Result: " + rules.get(ins.getKey()));
+    }
+    System.out.println();
+  }
+
 }

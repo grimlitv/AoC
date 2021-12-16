@@ -1,0 +1,16 @@
+
+P
+java:S1118":Add a private constructor to hide the implicit public one.(Å„Ìª
+Q	java:S125#"<This block of commented-out lines of code should be removed.(ÆÔ¼ã
+N	java:S106("9Replace this use of System.out or System.err by a logger.(“Ø˜°
+h
+java:S3776-"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(ü„•¸
+m
+java:S3776L"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(´ýõ€úÿÿÿÿ
+N	java:S106~"9Replace this use of System.out or System.err by a logger.(£ÓÐæ
+T	java:S106€"9Replace this use of System.out or System.err by a logger.(åÔªºÿÿÿÿÿ
+T	java:S106…"9Replace this use of System.out or System.err by a logger.(Å‚²Äøÿÿÿÿ
+T	java:S106‰"9Replace this use of System.out or System.err by a logger.(ç—û„üÿÿÿÿ
+a
+java:S1192"FDefine a constant instead of duplicating this literal "start" 4 times.(ÍïÅŸûÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Å„Ìª
