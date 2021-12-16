@@ -36,7 +36,7 @@ public class Main {
         //System.out.println("2015 Day eleven (part one) answer: " + y2015d11.run());
         //System.out.println("2015 Day eleven (part two) answer: " + y2015d11.runPartTwo());
         //System.out.println("2015 Day twelve (part one) answer: " + y2015d12.run());
-//        System.out.println("2015 Day twelve (part two) answer: " + y2015d12.runPartTwo());
+        System.out.println("2015 Day twelve (part two) answer: " + y2015d12.runPartTwo());
 
         // *** 2021 ***
         //System.out.println("2021 Day one (part one) answer: " + y2015d1.run());
@@ -64,6 +64,6 @@ public class Main {
         //System.out.println("2021 Day fourteen (part one) answer: " + y2021d14.run());
         //System.out.println("2021 Day fourteen (part two) answer: " + y2021d14.runPartTwo());
         //System.out.println("2021 Day fifteen (part one) answer: " + y2021d15.run());
-        System.out.println("2021 Day fifteen (part two) answer: " + y2021d15.runPartTwo());
+        //System.out.println("2021 Day fifteen (part two) answer: " + y2021d15.runPartTwo());
     }
 }
