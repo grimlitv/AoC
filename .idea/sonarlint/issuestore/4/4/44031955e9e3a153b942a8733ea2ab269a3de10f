@@ -1,0 +1,17 @@
+
+U
+java:S1118":Add a private constructor to hide the implicit public one.(‡œÈ›ýÿÿÿÿ
+m
+java:S62044"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(§øÙ•ùÿÿÿÿ
+m
+java:S6204="RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(§øÙ•ùÿÿÿÿ
+‹
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÖÐ–›ûÿÿÿÿ
+‹
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÿ€ÄÛþÿÿÿÿ
+‹
+java:S13199"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".( ”×¤ýÿÿÿÿ
+b
+java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(€èíù
+b
+java:S2095#"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(€èíù

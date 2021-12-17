@@ -1,0 +1,10 @@
+
+U
+java:S1118":Add a private constructor to hide the implicit public one.(‰óô¡þÿÿÿÿ
+S	java:S106K"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
+S	java:S106M"9Replace this use of System.out or System.err by a logger.(šÑ÷ñÿÿÿÿÿ
+S	java:S106P"9Replace this use of System.out or System.err by a logger.(„Óè²ýÿÿÿÿ
+S	java:S106Q"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
+m
+java:S3776T"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(‘Ä¥Õùÿÿÿÿ
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‰óô¡þÿÿÿÿ

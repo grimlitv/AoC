@@ -23,3 +23,21 @@ U
 %src/tv/grimli/y2021/d12/y2021d12.java,a\3\a3224854318dd1a19ed126fef9f0e0d25d2786be
 U
 %src/tv/grimli/y2021/d13/y2021d13.java,0\0\000cdf63af9852722b4aa0a8ccfff0fc9785468f
+R
+"src/tv/grimli/y2015/d12/input.json,b\c\bc97caa18ac35d0e0efa649fce08531710c4dc97
+T
+$src/tv/grimli/y2021/d01/y2021d1.java,e\c\ecfb69832bc63e3fea05a5a68504cbfc080a2b24
+O
+src/tv/grimli/ReadFromFile.java,4\4\44031955e9e3a153b942a8733ea2ab269a3de10f
+G
+src/tv/grimli/Main.java,a\d\ad2371d5d32d8c95c7c2a5e4bfa1371fdb806917
+U
+%src/tv/grimli/y2021/d15/y2021d15.java,a\2\a2d3577c068d84de08f46856b0ca3294ef58635e
+Q
+!src/tv/grimli/y2021/d16/input.txt,b\a\ba6c6315cb99f5bf780c9d14203d4b0614f7dd57
+U
+%src/tv/grimli/y2015/d12/y2015d12.java,d\3\d38919281d086c378968c069e98c5194b57c1059
+R
+"src/tv/grimli/y2021/d16/sample.txt,5\d\5d0cbb1f59757c8def17bd60d749b62d8a5fe132
+U
+%src/tv/grimli/y2021/d16/y2021d16.java,c\6\c68cf395dafdc185d09a34e0a2153576a032e8d7

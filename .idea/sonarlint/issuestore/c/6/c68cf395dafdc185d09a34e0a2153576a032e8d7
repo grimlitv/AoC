@@ -1,0 +1,39 @@
+
+U
+java:S1118	":Add a private constructor to hide the implicit public one.(•éß²ùÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Éö½’
+N	java:S106"9Replace this use of System.out or System.err by a logger.(™îö
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(–¼Ä
+S	java:S1063"9Replace this use of System.out or System.err by a logger.(˜ï·øşÿÿÿÿ
+2
+java:S6205D"Remove this redundant block.(üØô
+M	java:S106E"9Replace this use of System.out or System.err by a logger.(ŒàÀ\
+?
+java:S2129K"$Remove this "BigInteger" constructor(†É†¾ÿÿÿÿÿ
+7
+java:S6205M"Remove this redundant block.(™–Ø¥şÿÿÿÿ
+7
+java:S6205R"Remove this redundant block.(ùï‘ÿÿÿÿÿ
+7
+java:S6205W"Remove this redundant block.(×«ÙÕøÿÿÿÿ
+2
+java:S6205\"Remove this redundant block.(òî–è
+2
+java:S6205a"Remove this redundant block.(—©Ã 
+9
+java:S6205d"Remove this redundant block.(–Â•÷8 ³©®Ü/
+>
+java:S6205g"Remove this redundant block.(óÀ½İşÿÿÿÿ8£³©®Ü/
+N	java:S106j"9Replace this use of System.out or System.err by a logger.(º‰ÇÕ
+E
+java:S2114m"(Remove or correct this "removeAll" call.(Ò•ıó8÷•±®Ü/
+S	java:S106y"9Replace this use of System.out or System.err by a logger.(çº×üÿÿÿÿ
+T	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(ÃâÎëşÿÿÿÿ
+O	java:S106"9Replace this use of System.out or System.err by a logger.(êŸ¡‰
+T	java:S106’"9Replace this use of System.out or System.err by a logger.(ÿ‹şÿÿÿÿÿ
+O	java:S106 "9Replace this use of System.out or System.err by a logger.(èèëÂ
+g	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(•éß²ùÿÿÿÿ
+a
+java:S1226w"FIntroduce a new variable instead of reusing the parameter "packetCap".(àË×ùÿÿÿÿ
+b
+java:S1226"FIntroduce a new variable instead of reusing the parameter "packetCap".(àË×ùÿÿÿÿ

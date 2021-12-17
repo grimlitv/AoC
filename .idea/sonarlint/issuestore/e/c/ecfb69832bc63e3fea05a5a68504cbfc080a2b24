@@ -1,0 +1,10 @@
+
+P
+java:S1118	":Add a private constructor to hide the implicit public one.(§¹‹Ê
+Q	java:S125
+"<This block of commented-out lines of code should be removed.(û½¾
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(¤ÚÒ’þÿÿÿÿ
+S	java:S106;"9Replace this use of System.out or System.err by a logger.(¤ÚÒ’þÿÿÿÿ
+v
+java:S1192"`Define a constant instead of duplicating this literal "src/tv/grimli/day/one/input.txt" 3 times.(’Í¦—
+b	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(§¹‹Ê

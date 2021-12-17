@@ -1,0 +1,6 @@
+
+U
+java:S1118	":Add a private constructor to hide the implicit public one.(€²éÙüÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(ìô¿©
+X	java:S125Q"<This block of commented-out lines of code should be removed.(ìô¿©8™¡œ¨Ü/
+g	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(€²éÙüÿÿÿÿ
